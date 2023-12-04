@@ -1,0 +1,215 @@
+<!-- Copyright (c) 2007-2011 Rand Scullard. All Rights Reserved. -->
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Interactive Circle of Fifths</title>
+
+	<!-- Google Tag Manager -->
+	<!-- <script type="text/javascript" async="" defer="defer" src="index_files/ppms.js"></script><script async="" src="index_files/b8d28ed2-838b-4afc-8639-8c2da98f6374.js"></script><script async="" src="index_files/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': -->
+	<!-- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], -->
+	<!-- j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= -->
+	<!-- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); -->
+	<!-- })(window,document,'script','dataLayer','GTM-KW3XMXR');</script> -->
+	<!-- End Google Tag Manager -->
+
+	<link rel="stylesheet" type="text/css" href="index_files/CircleOfFifths.css">
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="CircleOfFifths_IEPre7.css" />
+<![endif]-->
+
+	<script language="javascript" src="index_files/CircleOfFifths.js"></script>
+<!--[if lt IE 7]>
+	<script language="javascript" src="CircleOfFifths_IEPre7.js"></script>
+<![endif]-->
+<style type="text/css">@media print {
+        .TridactylStatusIndicator {
+            display: none !important;
+        }
+    }</style><script id="ppas_container_configuration" data-appid="b8d28ed2-838b-4afc-8639-8c2da98f6374" data-host="randoms.piwik.pro"></script></head><iframe class="cleanslate hidden" src="index_files/commandline.html" id="cmdline_iframe" loading="lazy" style="height: 0px !important;"></iframe>
+<body onload="OnPageLoad(event)" onmouseup="OnPageMouseUp(event)" onmouseout="OnPageMouseOut(event)">
+	<!-- Google Tag Manager (noscript) -->
+	<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW3XMXR" -->
+	<!-- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div class="Description">
+		The Interactive Circle of Fifths is a free online music theory tool designed to help musicians to
+		interpret chord progressions, easily transpose music to a different key,
+		compose new music, and understand key signatures, scales, and modes.
+		It goes beyond the limitations of a traditional, static diagram without sacrificing clarity
+		and simplicity, and it includes an extensive User's Guide to help you discover all that it
+		has to offer.
+	</div>
+
+	<!-- 
+	Reference the following images so that this page can be saved locally (MHT format).
+	(These images are otherwise only referenced dynamically by script, so they would not
+	be copied by the browser when you download/save the page.)
+	-->
+	<div style="display:none">
+		<img src="index_files/DoubleFlatSymbol_43px.png">
+		<img src="index_files/DoubleSharpSymbol_43px.png">
+		<img src="index_files/FlatSymbol_15px.png">
+		<img src="index_files/FlatSymbol_43px.png">
+		<img src="index_files/SharpSymbol_15px.png">
+		<img src="index_files/SharpSymbol_43px.png">
+	</div>
+
+	<table id="LoadingMessage" class="LoadingMessage" style="display: none;">
+		<tbody><tr><td>Loading, one moment please...</td></tr>
+	</tbody></table>
+
+	<div id="PageContent" class="PageContent" style="">
+		<div class="TitleArea">
+			<img src="index_files/Title.gif" alt="Interactive Circle of Fifths by Rand Scullard">
+		</div>
+
+		<div class="DocumentationLink">
+			<a href="https://randscullard.com/CircleOfFifths/UserGuide.htm" target="CircleOfFifthsUserGuide"><nobr>User's Guide</nobr></a>
+		</div>
+
+		<table class="Copyright">
+			<tbody><tr><td height="100%"><img src="index_files/Blank.gif"></td></tr>
+			<tr><td>Copyright 2007 Rand Scullard. All Rights Reserved.</td></tr>
+		</tbody></table>
+
+		<div class="Circle">
+			<img id="Gray_1" src="index_files/Gray_1.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_2" src="index_files/Gray_2.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_3" src="index_files/Gray_3.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_4" src="index_files/Gray_4.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_5" src="index_files/Gray_5.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_6" src="index_files/Gray_6.png" class="CirclePart">
+			<img id="Gray_7" src="index_files/Gray_7.png" class="CirclePart">
+			<img id="Gray_8" src="index_files/Gray_8.png" class="CirclePart">
+			<img id="Gray_9" src="index_files/Gray_9.png" class="CirclePart">
+			<img id="Gray_10" src="index_files/Gray_10.png" class="CirclePart">
+			<img id="Gray_11" src="index_files/Gray_11.png" class="CirclePart" style="visibility: hidden;">
+			<img id="Gray_12" src="index_files/Gray_12.png" class="CirclePart" style="visibility: hidden;">
+
+			<img id="ModesDegrees_1" src="index_files/ModesDegrees_1.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_2" src="index_files/ModesDegrees_2.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_3" src="index_files/ModesDegrees_3.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_4" src="index_files/ModesDegrees_4.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_5" src="index_files/ModesDegrees_5.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_6" src="index_files/ModesDegrees_6.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_7" src="index_files/ModesDegrees_7.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_8" src="index_files/ModesDegrees_8.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_9" src="index_files/ModesDegrees_9.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_10" src="index_files/ModesDegrees_10.png" class="CirclePart" style="visibility: hidden;">
+			<img id="ModesDegrees_11" src="index_files/ModesDegrees_11.png" class="CirclePart" style="">
+			<img id="ModesDegrees_12" src="index_files/ModesDegrees_12.png" class="CirclePart" style="visibility: hidden;">
+			
+			<img id="TonicArrow_1" src="index_files/TonicArrow_1.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_2" src="index_files/TonicArrow_2.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_3" src="index_files/TonicArrow_3.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_4" src="index_files/TonicArrow_4.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_5" src="index_files/TonicArrow_5.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_6" src="index_files/TonicArrow_6.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_7" src="index_files/TonicArrow_7.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_8" src="index_files/TonicArrow_8.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_9" src="index_files/TonicArrow_9.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_10" src="index_files/TonicArrow_10.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_11" src="index_files/TonicArrow_11.png" class="CirclePart" style="visibility: hidden;">
+			<img id="TonicArrow_12" src="index_files/TonicArrow_12.png" class="CirclePart" style="">
+			
+			<img src="index_files/CircleFrame.png" class="CirclePart">
+
+			<div class="CircleNoteNames">
+				<div id="Note_1" class="NoteName Note1">G</div>
+				<div id="Note_2" class="NoteName Note2">D</div>
+				<div id="Note_3" class="NoteName Note3">A</div>
+				<div id="Note_4" class="NoteName Note4">E</div>
+				<div id="Note_5" class="NoteName Note5">B</div>
+				<div id="Note_6" class="NoteName Note6">F<img class="Sharp_43px" src="index_files/SharpSymbol_43px.png"></div>
+				<div id="Note_7" class="NoteName Note7">D<img class="Flat_43px" src="index_files/FlatSymbol_43px.png"></div>
+				<div id="Note_8" class="NoteName Note8">A<img class="Flat_43px" src="index_files/FlatSymbol_43px.png"></div>
+				<div id="Note_9" class="NoteName Note9">E<img class="Flat_43px" src="index_files/FlatSymbol_43px.png"></div>
+				<div id="Note_10" class="NoteName Note10">B<img class="Flat_43px" src="index_files/FlatSymbol_43px.png"></div>
+				<div id="Note_11" class="NoteName Note11">F</div>
+				<div id="Note_12" class="NoteName Note12">C</div>
+			</div>
+
+			<div id="Degree_1" class="Degree Degree1" style="">V</div>
+			<div id="Degree_2" class="Degree Degree2" style="">ii</div>
+			<div id="Degree_3" class="Degree Degree3" style="">vi</div>
+			<div id="Degree_4" class="Degree Degree4" style="">iii</div>
+			<div id="Degree_5" class="Degree Degree5" style="">vii°</div>
+			<div id="Degree_6" class="Degree Degree6" style="visibility: hidden;"></div>
+			<div id="Degree_7" class="Degree Degree7" style="visibility: hidden;"></div>
+			<div id="Degree_8" class="Degree Degree8" style="visibility: hidden;"></div>
+			<div id="Degree_9" class="Degree Degree9" style="visibility: hidden;"></div>
+			<div id="Degree_10" class="Degree Degree10" style="visibility: hidden;"></div>
+			<div id="Degree_11" class="Degree Degree11" style="">IV</div>
+			<div id="Degree_12" class="Degree Degree12" style="">I</div>
+		</div>
+		
+		<table id="TonicTable" class="TonicTable" cellpadding="0" cellspacing="0" onselectstart="return false" ondragstart="return false">
+			<thead>
+				<tr><td>Tonic</td></tr>
+			</thead>
+			<tbody onmousedown="OnTonicMousedown(event)" onmouseover="OnTonicMouseover(event)">
+				<tr><td class="obscure" rds_value="B#">B<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td class="obscure" rds_value="E#">E<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td class="obscure" rds_value="A#">A<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td class="obscure" rds_value="D#">D<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td class="obscure" rds_value="G#">G<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td rds_value="C#">C<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td rds_value="F#">F<img class="Sharp_15px" src="index_files/SharpSymbol_15px.png"></td></tr>
+				<tr><td rds_value="B">B</td></tr>
+				<tr><td rds_value="E">E</td></tr>
+				<tr><td rds_value="A">A</td></tr>
+				<tr><td rds_value="D">D</td></tr>
+				<tr><td rds_value="G">G</td></tr>
+				<tr><td rds_value="C" class=" selected">C</td></tr>
+				<tr><td rds_value="F">F</td></tr>
+				<tr><td rds_value="Bb">B<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td rds_value="Eb">E<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td rds_value="Ab">A<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td rds_value="Db">D<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td rds_value="Gb">G<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td rds_value="Cb">C<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+				<tr><td class="obscure" rds_value="Fb">F<img class="Flat_15px" src="index_files/FlatSymbol_15px.png"></td></tr>
+			</tbody>
+		</table>
+
+		<table id="ModeTable" class="ModeTable" cellpadding="0" cellspacing="0" onselectstart="return false" ondragstart="return false">
+			<thead>
+				<tr><td>Mode</td></tr>
+			</thead>
+			<tbody onmousedown="OnModeMousedown(event)" onmouseover="OnModeMouseover(event)">
+				<tr><td rds_value="lydian">Lydian</td></tr>
+				<tr><td rds_value="ionian" class=" selected">Major / Ionian</td></tr>
+				<tr><td rds_value="mixolydian">Mixolydian</td></tr>
+				<tr><td rds_value="dorian">Dorian</td></tr>
+				<tr><td rds_value="aeolian">N. Minor / Aeolian</td></tr>
+				<tr><td rds_value="phrygian">Phrygian</td></tr>
+				<tr><td rds_value="locrian">Locrian</td></tr>
+			</tbody>
+		</table>
+	</div>
+
+
+<span class="cleanslate TridactylStatusIndicator  TridactylModenormal ">normal</span><script type="text/javascript" id="">(function(d,k,e,q){function r(c,b,f){var a="";f&&(a=new Date,a.setTime(a.getTime()+864E5*f),a="; expires\x3d"+a.toUTCString());k.cookie=c+"\x3d"+b+a+"; path\x3d/"}d[e]=d[e]||[];d[e].push({start:(new Date).getTime(),event:"stg.start"});var n=k.getElementsByTagName("script")[0],m=k.createElement("script"),g=(d.location.href.match("stg_debug")||k.cookie.match("stg_debug"))&&!d.location.href.match("stg_disable_debug");r("stg_debug",g?1:"",g?14:-1);var l=[];"dataLayer"!==e&&l.push("data_layer_name\x3d"+
+e);g&&l.push("stg_debug");g=0<l.length?"?"+l.join("\x26"):"";m.async=!0;m.src="https://randoms.containers.piwik.pro/"+q+".js"+g;n.parentNode.insertBefore(m,n);!function(c,b,f){c[b]=c[b]||{};for(var a=0;a<f.length;a++)!function(h){c[b][h]=c[b][h]||{};c[b][h].api=c[b][h].api||function(){var p=[].slice.call(arguments,0);"string"==typeof p[0]&&d[e].push({event:b+"."+h+":"+p[0],parameters:[].slice.call(arguments,1)})}}(f[a])}(d,"ppms",["tm","cm"])})(window,document,"dataLayer","b8d28ed2-838b-4afc-8639-8c2da98f6374");</script><script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(["setCustomUrl", window.location.protocol + "//" + window.location.host.replace(/^www\./gi, "") + window.location.pathname + window.location.search + window.location.hash]);
+</script><script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['disableCookies']);
+</script>
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['setTrackingSource', 'jstc_tm']);
+    _paq.push(['enableLinkTracking']);
+    _paq.push(['setIpTracking', true]);
+    _paq.push(['setDomains', ['randscullard.com']]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableJSErrorTracking']);
+    (function(p,i,w,ik) {
+        var g=ik.createElement('script'),s=ik.getElementsByTagName('script')[0];
+        _paq.push(['setTrackerUrl', p]);
+        _paq.push(['setSiteId', w]);
+        g.type='text/javascript';g.async=true;g.defer=true;g.src=i;s.parentNode.insertBefore(g,s);
+    })('https://randoms.piwik.pro/ppms.php','https://randoms.containers.piwik.pro/ppms.js','b8d28ed2\u002D838b\u002D4afc\u002D8639\u002D8c2da98f6374',document)
+</script>
+</body></html>
